@@ -2,7 +2,7 @@
 
 This project was created as a study on Redux Toolkit.
 
-## Technology
+## Tech Stack
 
    1. Reactjs
    2. Redux Toolkit
