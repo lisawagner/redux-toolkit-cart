@@ -33,7 +33,6 @@ body {
   background: var(--white);
   color: var(--grey-8);
   line-height: 1.5;
-  font-size: 0.875rem;
 }
 a {
   text-decoration: none;
@@ -45,9 +44,41 @@ img {
 h1, h2, h3, h4 {
   text-transform: capitalize;
   line-height: 1.25;
-  margin-bottom: 0.75rem;
+}
+.btn {
+  
+}
+/* NAVBAR */
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--white);
+  background-color: var(--orange-pantone);
+  padding: 1.25rem 2rem;
+  width: 100%;
 }
 
+.cart-icon-wrap {
+  display:flex;
+  margin-bottom: 0;
+  font-size: 1.25rem;
+
+}
+.amount-wrap {
+  position: absolute;
+  font-size: 0.75rem;
+  top: 0.9rem;
+  right: 1.3rem;
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: 50%;
+  background: rgba(73, 80, 87, 0.6);
+  /* background-color: var(--amber); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 /* MEDIA QUERRIES */
 @media screen and (min-width: 767px) {
