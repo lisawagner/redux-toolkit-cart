@@ -1,6 +1,7 @@
 import CartItem from './CartItem'
 import { useDispatch, useSelector } from 'react-redux'
-import { clearCart } from '../features/cart/cartSlice'
+// import { clearCart } from '../features/cart/cartSlice'
+import { openModal } from '../features/modal/modalSlice'
 
 const CartContainer = () => {
   const { cartItems, totalCost, quantity } = useSelector((store) => store.cart)
@@ -28,17 +29,20 @@ const CartContainer = () => {
       <div className='cart-footer'>
         {/* <hr/> */}
         <div className='total-cost-checkout'>
-          <button className='btn checkout-btn hover-right'>
+          <button className='btn checkout-btn'>
             <span>checkout</span>
           </button>
-          <p>Subtotal: </p><h3>${totalCost.toFixed(2)}</h3>
+          <div className='subtotal'>
+            <p>Subtotal: </p>
+            <h3>${totalCost.toFixed(2)}</h3>
+          </div>
         </div>
 
         <div className='cart-footer-btns'>
           <button className='btn clear-btn'>
             <span>continue shopping</span>
           </button>
-          <button className='btn clear-btn' onClick={() => dispatch(clearCart())}>
+          <button className='btn clear-btn' onClick={() => dispatch(openModal())}>
             <span>clear cart</span>
           </button>
         </div>
