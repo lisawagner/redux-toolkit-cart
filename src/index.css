@@ -133,9 +133,21 @@ h1, h2, h3, h4 {
   margin: 4rem auto;
   width: 70%;
 }
+.total-cost-checkout {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  margin: 2rem auto 2.5rem;
+  /* column-gap: 2rem; */
+  row-gap: 1rem;
+}
+.subtotal {
+  display: flex;
+  column-gap: 0.75rem;
+}
 .cart-footer-btns {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   justify-content: center;
   row-gap: 1rem;
   margin: 0.5em auto;
@@ -243,13 +255,7 @@ h1, h2, h3, h4 {
   border: 0.5px solid var(--grey-4);
   color: var(--grey-5);
 }
-.total-cost-checkout {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  margin: 2rem auto 5.5rem;
-  column-gap: 2rem;
-}
+
 
 /* MODAL */
 .modal-container {
@@ -277,8 +283,8 @@ h1, h2, h3, h4 {
   margin-bottom: 0;
   line-height: 1.5;
 }
-.modal .clear-btn,
-.modal .confirm-btn {
+.modal .btn,
+.modal .btn {
   margin-top: 1rem;
 }
 .btn-container {
@@ -286,9 +292,14 @@ h1, h2, h3, h4 {
   justify-content: space-around;
 }
 
-
 /* MEDIA QUERRIES */
 @media (min-width: 767px) {
+  .total-cost-checkout {
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 2rem auto 5.5rem;
+    column-gap: 2rem;
+  }
   .cart-footer-btns {
     flex-direction: row;
     justify-content: space-between;
