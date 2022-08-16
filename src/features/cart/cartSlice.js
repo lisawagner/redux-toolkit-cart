@@ -1,12 +1,22 @@
-import { createSlice } from '@reduxjs/toolkit';
+import { createSlice,createAsyncThunk } from '@reduxjs/toolkit';
 import cartItems from '../../data/cartItems'
 
+const URL = 'https://gist.githubusercontent.com/lisawagner/49b2c3c2e949aaf54333ec343a2e8173/raw/da4138e04dd54b0983b5f68ddc1db9b4d6acce4d/cart-data.json'
+
 const initialState = {
-  cartItems: cartItems,
+  // cartItems: cartItems,
+  cartItems: [],
   quantity: 0,
   totalCost: 0,
   isLoading: true,
 }
+
+export const getCartItems = createAsyncThunk('cart/getCartItems', () => {
+  return fetch(URL)
+    .then(resp => resp.json())
+    .catch((err) => console.log(err)
+  )
+})
 
 const cartSlice = createSlice({
   name: 'cart',
@@ -37,6 +47,19 @@ const cartSlice = createSlice({
       })
       state.quantity = amount
       state.totalCost = total
+    },
+  },
+  extraReducers: {
+    [getCartItems.pending]: (state) => {
+      state.isLoading = true
+    },
+    [getCartItems.fulfilled]: (state, action) => {
+      console.log(action);
+      state.isLoading = false
+      state.cartItems = action.payload
+    },
+    [getCartItems.rejected]: (state) => {
+      state.isLoading = false
     }
   }
 })
