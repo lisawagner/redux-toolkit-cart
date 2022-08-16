@@ -7,7 +7,7 @@ const style = {
   width: "40px"
 }
 const Navbar = () => {
-  const qty = useSelector((store) => store.cart.itemQuantity)
+  const qty = useSelector((store) => store.cart.quantity)
   console.log(qty);
   // console.log(
   //   useSelector((store) => {
