@@ -14,20 +14,29 @@ const CartContainer = () => {
   }
   return (
     <div className='cart'>
-      <div className='cart-header'></div>
-      <h1>Order Summary</h1>
+      <div className='cart-header'>
+        <h1>My Cart</h1> 
+      </div>
+      
       <div>
         {cartItems.map((item) => {
           return <CartItem key={item.id} {...item} />;
         })}
       </div>
       <div className='cart-footer'>
-        <hr/>
+        {/* <hr/> */}
         <div className='total-cost'>
-          <h3>Total <span>${totalCost.toFixed(2)}</span></h3>
+          <p>Subtotal ({itemQuantity}): </p><h3>${totalCost.toFixed(2)}</h3>
         </div>
-        <button className='btn clear-btn'>continue shopping</button>
-        <button className='btn clear-btn'>clear cart</button>
+
+        <div className='cart-footer-btns'>
+          <button className='btn clear-btn'>
+            <span>continue shopping</span>
+          </button>
+          <button className='btn clear-btn'>
+            <span>clear cart</span>
+          </button>
+        </div>
       </div>
     </div>
   )
