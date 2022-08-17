@@ -1,7 +1,6 @@
 import { createSlice,createAsyncThunk } from '@reduxjs/toolkit';
-// import cartItems from '../../data/cartItems'
 import axios from 'axios';
-import { openModal } from '../modal/modalSlice';
+// import { openModal } from '../modal/modalSlice';
 
 const URL = 'https://gist.githubusercontent.com/lisawagner/49b2c3c2e949aaf54333ec343a2e8173/raw/da4138e04dd54b0983b5f68ddc1db9b4d6acce4d/cart-data.json'
 

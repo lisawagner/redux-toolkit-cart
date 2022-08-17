@@ -29,7 +29,7 @@ const CartContainer = () => {
       <div className='cart-footer'>
         {/* <hr/> */}
         <div className='total-cost-checkout'>
-          <button className='btn checkout-btn'>
+          <button className='btn checkout-btn hide'>
             <span>checkout</span>
           </button>
           <div className='subtotal'>
@@ -39,7 +39,7 @@ const CartContainer = () => {
         </div>
 
         <div className='cart-footer-btns'>
-          <button className='btn clear-btn'>
+          <button className='btn clear-btn hide'>
             <span>continue shopping</span>
           </button>
           <button className='btn clear-btn' onClick={() => dispatch(openModal())}>

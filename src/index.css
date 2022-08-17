@@ -54,7 +54,6 @@ h1, h2, h3, h4 {
   position: absolute;
   content: "";
 }
-
 .btn {
   position: relative;
   display: inline-block;
@@ -94,6 +93,11 @@ h1, h2, h3, h4 {
 .btn span:hover {
   color: rgb(255,255,255);
   transition: 0.2s 0.1s;
+}
+
+/* HIDDEN */
+.hide {
+  visibility: hidden;
 }
 
 /* NAVBAR */
@@ -137,8 +141,7 @@ h1, h2, h3, h4 {
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
-  margin: 2rem auto 2.5rem;
-  /* column-gap: 2rem; */
+  /* margin: 2rem auto 2.5rem; // for the upcoming features */
   row-gap: 1rem;
 }
 .subtotal {
@@ -153,7 +156,6 @@ h1, h2, h3, h4 {
   margin: 0.5em auto;
 }
 .checkout-btn::before {
-  /* background-color: rgb(28, 31, 30); */
   background-color: var(--amber);
   transition: 0.3s ease-out;
 
@@ -297,7 +299,7 @@ h1, h2, h3, h4 {
   .total-cost-checkout {
     flex-direction: row;
     justify-content: flex-end;
-    margin: 2rem auto 5.5rem;
+    /* margin: 2rem auto 5.5rem; // for the upcoming features */
     column-gap: 2rem;
   }
   .cart-footer-btns {
