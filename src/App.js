@@ -13,11 +13,11 @@ function App() {
 
   useEffect(() => {
     dispatch(calculateSubtotal())
-  }, [cartItems])
+  }, [dispatch, cartItems])
 
   useEffect(() => {
     dispatch(getCartItems())
-  }, [])
+  }, [dispatch])
   
   if(isLoading) {
     return (
