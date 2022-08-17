@@ -2,13 +2,14 @@
 
 This Shopping Cart was created as a study on Redux Toolkit. 
 
-[Shopping Cart Demo](https://redux-issue-queue.web.app/ "Shopping Cart Demo")
+[Shopping Cart Demo](https://friendly-redux-shopping-cart.netlify.app/ "Shopping Cart Demo")
 
 ## Tech Stack
 
    1. Reactjs
    2. Redux Toolkit
    3. Axios
+   4. Netlify Deployment
 
 ## Scope
 
