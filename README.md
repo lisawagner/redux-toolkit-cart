@@ -2,6 +2,8 @@
 
 This Shopping Cart was created as a study on Redux Toolkit. 
 
+[Shopping Cart Demo](https://redux-issue-queue.web.app/ "Shopping Cart Demo")
+
 ## Tech Stack
 
    1. Reactjs
@@ -20,9 +22,7 @@ This Shopping Cart was created as a study on Redux Toolkit.
         * price
         * delete item from cart button
 
-## Demo
-
-[Demo](https://redux-issue-queue.web.app/ "Shopping Cart Demo")
+## Application Snapshot
 
 ![Cart Snapshot](src/assets/cart-img.png "Cart Snapshot")
 
