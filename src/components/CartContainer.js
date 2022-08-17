@@ -9,9 +9,12 @@ const CartContainer = () => {
 
   if(quantity < 1) {
     return (
-      <div className='cart'>
+      <div className='empty-cart-wrap'>
         <h1>Order Summary</h1>
-        <div><h3>cart is currently empty</h3></div>
+        <h3>cart is currently empty</h3>
+        <button className='btn clear-btn' onClick={() => window.location.reload(false)}>
+          <span>reload cart</span>
+        </button>
       </div>
     )
   }

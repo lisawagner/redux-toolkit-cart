@@ -110,12 +110,10 @@ h1, h2, h3, h4 {
   padding: 1.25rem 2rem;
   width: 100%;
 }
-
 .cart-icon-wrap {
   display:flex;
   margin-bottom: 0;
   font-size: 1.25rem;
-
 }
 .amount-wrap {
   position: absolute;
@@ -126,7 +124,6 @@ h1, h2, h3, h4 {
   height: 1.2rem;
   border-radius: 50%;
   background: rgba(73, 80, 87, 0.6);
-  /* background-color: var(--amber); */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -136,6 +133,13 @@ h1, h2, h3, h4 {
 .cart {
   margin: 4rem auto;
   width: 70%;
+}
+.empty-cart-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1rem;
+  margin: 2rem auto;
 }
 .total-cost-checkout {
   display: flex;
