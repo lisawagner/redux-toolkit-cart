@@ -39,6 +39,9 @@ const cartSlice = createSlice({
     },
     removeItem: (state, action) => {
       const itemId = action.payload
+      // This doesn't actually 'remove' the item from the 'database' data file
+      // It filters through the items and only displays items that don't match
+      //    the payload id.
       state.cartItems = state.cartItems.filter((item) => item.id !== itemId)
     },
     increment: (state, {payload}) => {
