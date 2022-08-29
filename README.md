@@ -31,6 +31,35 @@
 
 ![Cart Snapshot](src/assets/cart-img.png "Cart Snapshot")
 
+## Getting Started
+
+These instructions will give you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on deploying the project on a live system.
+
+### Development setup
+
+Download and extract the Zip file or clone this repo your system.
+
+After downloading/cloning this repo, go to its root directory and run:
+
+```
+$ npm i
+$ npm start
+```
+
+### Deployment
+
+This project is hosted on Netlify. To deploy your own copy, you will need to set up a Netlify account. Netlify offers a generous free tier to developers.
+
+Before deploying to Netlify you need to create a build:
+
+```
+$ npm run build
+```
+
+It is a good idea to test your build by serving it on your localhost. Once you are happy with your build, open up your Netlify Account.
+
+For a basic deploy, you can simply drag and drop the build folder onto your Netlify Sites directory. See [Get started with Netlify](https://docs.netlify.com/get-started/) for details.
+
 ## Extras
 
 A css class of `.hide` added on the 'continue shopping' button and the 'checkout' button. The functionality of these button are not part of the scope of this study. They will be built out as part of an upcoming study.
